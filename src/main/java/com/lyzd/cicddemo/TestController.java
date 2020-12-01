@@ -1,5 +1,6 @@
 package com.lyzd.cicddemo;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,8 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @RequestMapping("/demo")
-    public String test(@RequestBody String str){
-        return "hello world!!!"+ str;
+    @GetMapping
+    public String test(String str){
+        return "hello world!" + str;
     }
 
 
