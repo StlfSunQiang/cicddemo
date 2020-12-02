@@ -1,8 +1,15 @@
 apiVersion: v1
+kind: Namespace
+metadata:
+   name: {namespace_name}
+
+---
+
+apiVersion: v1
 kind: Service
 metadata:
   name: {app_name}
-  namespace: cicd_test
+  namespace: {namespace_name}
   labels:
     app: {app_name}
 spec:
@@ -33,4 +40,5 @@ spec:
       containers:
       - name: {app_name}
         image: {docker_img_name}
-        imagePullPolicy: Always 
+        imagePullPolicy: Always
+
