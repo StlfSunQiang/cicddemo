@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {app_name}
-  namespace: default
+  namespace: cicd_test
   labels:
     app: {app_name}
 spec:
