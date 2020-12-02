@@ -19,7 +19,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {app_name}
+  name: {deploy_name}
 spec:
   replicas: {replicas_num}
   selector:
