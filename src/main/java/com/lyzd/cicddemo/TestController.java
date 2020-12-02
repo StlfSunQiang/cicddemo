@@ -18,7 +18,7 @@ public class TestController {
     @RequestMapping("/demo")
     @GetMapping
     public String test(String str){
-        return "hello world! 我是孙强" + str;
+        return "hello world! 我是孙强123" + str;
     }
 
 
