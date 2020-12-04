@@ -17,6 +17,7 @@ public class TestController {
     @RequestMapping("/demo")
     @GetMapping
     public String test(String str){
+        System.out.println("请求参数==========" + str);
         return "hello world! 我是孙强123456789" + str;
     }
 
