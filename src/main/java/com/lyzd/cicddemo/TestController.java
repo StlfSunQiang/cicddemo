@@ -1,7 +1,6 @@
 package com.lyzd.cicddemo;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,7 +17,8 @@ public class TestController {
     @RequestMapping("/demo")
     @GetMapping
     public String test(String str){
-        return "hello world! 我是孙强789" + str;
+        System.out.println("-----------");
+        return "hello world! 我是孙强123456789" + str;
     }
 
 
